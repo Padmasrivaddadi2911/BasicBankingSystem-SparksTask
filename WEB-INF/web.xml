@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app>
+	<servlet>
+		<servlet-name>customerServlet1</servlet-name>
+		<servlet-class>customerServlet1</servlet-class>
+	</servlet>
+   <servlet>
+		<servlet-name>transactionServlet</servlet-name>
+		<servlet-class>transactionServlet</servlet-class>
+	</servlet>
+<servlet>
+		<servlet-name>viewServlet</servlet-name>
+		<servlet-class>viewServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>customerServlet1</servlet-name>
+		<url-pattern>/customerServlet1</url-pattern>
+	</servlet-mapping>
+   	<servlet-mapping>
+		<servlet-name>transactionServlet</servlet-name>
+		<url-pattern>/transactionServlet</url-pattern>
+	</servlet-mapping>
+<servlet-mapping>
+		<servlet-name>viewServlet</servlet-name>
+		<url-pattern>/viewServlet</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
